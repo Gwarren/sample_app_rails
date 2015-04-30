@@ -1,2 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-#emptied this out due to conflict in testing suite
+bob:
+  name: bob
+  email: bob@example.com
+  password_digest: <%= User.digest('password') %>
