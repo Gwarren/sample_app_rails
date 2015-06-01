@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets"; 
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 /*******************************************************************************************************
                                         Mixins and variables
 ***********************************************************************************************************/
@@ -67,6 +69,9 @@ p {
 /********************************************************************
                   Header
 ************************************************************************/
+.navbar-fixed-top{
+  background:linear-gradient(to top, rgba(255, 100, 75, .7),  rgba(255, 100, 75, 1));
+}
 #logo { 
 
   float:left;
@@ -94,23 +99,23 @@ p {
   border-top:1px solid #eaeaea;
   color:$gray-light;
 
-  a { 
-    color:$gray;
-  }
-  &hover { 
-    color:$gray-darker;
-  }
-  small { 
-    float:left;  
-  }
-  ul { 
-    float:right;
-    list-style:none;
-  }
-    li{ 
-      float:left;  
-      margin-left:15px;
+    a { 
+      color:$gray;
     }
+      &hover { 
+        color:$gray-darker;
+      }
+        small { 
+          float:left;  
+      }
+          ul { 
+            float:right;
+            list-style:none;
+            }
+            li{ 
+              float:left;  
+              margin-left:15px;
+          }
 }
 /*Misc*/ 
 .debug_dump{ 
